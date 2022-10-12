@@ -1,20 +1,15 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["import-helpers", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "eslint-plugin-import-helpers",
+    "import-helpers",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "rules": {
-    "@next/next/no-img-element": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "import/no-anonymous-default-export": [
-      "error",
-      {
-        "allowArrowFunction": true
-      }
-    ],
+    "no-undef": "off",
     "prettier/prettier": [
       "error",
       {
