@@ -23,3 +23,10 @@ export const Large: StoryObj<TextProps> = {
     size: "lg"
   }
 };
+
+export const CustomComponent: StoryObj<TextProps> = {
+  args: {
+    asChild: true,
+    children: <p>I am a paragraph now, not a span</p>
+  }
+};
